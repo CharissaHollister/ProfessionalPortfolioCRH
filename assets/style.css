@@ -1,4 +1,73 @@
 /*Styling CSS for ProfessionalPortfolioCRH*/
 /*Authored by Charissa Hollister on 04/19/22*/
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*variables*/
+
+:root {
+    --primary-color: #e56fea;
+    --secondary-color: ivory;
+    --bg-color:  #2a607c;
+    --bg-color2: #0076c6;
+    --padding: 20px;
+    --blur: 10px;
+}
+
+
+
+
+
+
+/*general selectors*/
+
+.left-align{
+    text-align: left;
+}
+.right-align{
+    text-align: right;
+}
+.center-text{
+    text-align: center;
+}
+
+/*--headline with quicklinks*/
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+.header h2{
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
 
