@@ -43,6 +43,9 @@
     margin-left: 25px;
 }
 
+/*add screen size responsiveness*/
+
+
 /*--headline with quicklinks*/
 .header {
     padding: 20px;
@@ -122,3 +125,28 @@ border-bottom-right-radius: 0;
     margin-left: 20px;
 }
 
+
+
+/*footer*/
+footer {
+    padding: 20px;
+    padding-left: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+footer h2{
+    display: inline-block;
+    font-size: 48px;
+}
+
+footer p {
+    padding-top: 10px;
+    margin-right: 20px;
+    padding-right: 70px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: var(--primary-color);
+}
