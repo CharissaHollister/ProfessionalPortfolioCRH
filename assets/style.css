@@ -117,7 +117,7 @@ border-bottom-right-radius: 0;
 }
 
 
-/*all of left column*/
+/*about me and contact left column*/
 
 aside h3{
     font-size: 33px;
@@ -125,7 +125,7 @@ aside h3{
 }
 
 
-/*all of right column*/
+/*about me right column*/
 article p {
     width: 75%;
     display: inline-block;
@@ -148,6 +148,9 @@ text-align: right;
     flex-wrap: wrap;
     overflow: auto;
     height: fit-content;
+    row-gap: 20px;
+    border: none;
+
 }
 
 .leftProj, .rightProj{
@@ -157,7 +160,7 @@ text-align: right;
     justify-content: space-around;
     max-height: fit-content;
     position: absolute;
-align-content: space-between;
+    margin:auto;
 /*figure out how to space evenly vertical*/
 }
 .worksec div section{
@@ -166,11 +169,14 @@ denoted in image source html*/
     text-align: center;
 }
 
+/*figure out how to move title to middle of project img*/
+
 .leftProj{
 float: left;
 margin-left: 5%;
 padding: 5%;
 }
+
 
 .rightProj{
 float: right;
@@ -178,11 +184,7 @@ margin-left: 70%;
 padding: 5%;
 }
 
-/*.leftProj img, .rightProj img{
-width:200px;
-height:100px; /*remove or change later*/
-/*position: absolute;
-}*/
+
 
 /*.left1{
     margin-top: 600px;
@@ -215,7 +217,10 @@ height:100px; /*remove or change later*/
 }
 
 
-
+.OtherProj{
+    position: relative;
+    text-align: center;
+}
 /*contact me*/
 
 .contactMe{
@@ -223,6 +228,7 @@ height:100px; /*remove or change later*/
  margin: 20px 0px;
  padding: 20px;
  align-items: center;
+ position: relative;
 /*how to center vertically 
 and space contacts across the right column*/
 }
