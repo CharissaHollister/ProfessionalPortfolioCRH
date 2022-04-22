@@ -73,12 +73,12 @@
     margin-left: 25px;
 }
 
-a {
+nav a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-a:hover{
+nav a:hover{
     color: var(--secondary-color);
 }
 
@@ -119,11 +119,64 @@ border-bottom-right-radius: 0;
 
 
 /*all of left column*/
-.content {
+
+aside h3{
+    font-size: 33px;
+    float: left;
+}
+
+
+/*all of right column*/
+article p {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+   padding-right: 20px;
+text-align: right;
 }
+
+
+/*about me*/
+
+/*work*/
+
+/*contact me*/
+
+.contactMe{
+ display:flex;
+ margin: 20px 0px;
+ padding: 20px;
+ align-items: center;
+/*how to center vertically 
+and space contacts across the right column*/
+}
+
+.contactMe ul{
+    padding-top: 15px;
+    margin-right: 20px;
+    width: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+    float: right;
+    text-align: right;
+
+    
+}
+.contactMe ul li{
+    display: inline-block;
+
+}
+.contactMe a{
+color: darkmagenta;
+
+}
+.contactMe a:hover{
+    color: black;
+}
+
+
+
+
 
 
 
