@@ -5,4 +5,6 @@ A professional portfolio of Charissa Hollister's web development samples
 
 Wireframe drafted to include about me, work, and contact me. Work will include space for 1 main project and 5 other projects and an 'other' section. Contact will include telephone, email, github, and linked in
 
-Header and nav drafted
+Header and nav drafted to include large Name and 4 small nav links that change on hovering.
+
+

@@ -34,6 +34,14 @@
 .center-text{
     text-align: center;
 }
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
 
 /*--headline with quicklinks*/
 .header {
@@ -69,5 +77,48 @@ a {
 
 a:hover{
     color: var(--secondary-color);
+}
+
+/*hero background image and subtitle*/
+
+.heropg {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/digital\ computer\ wallpapers.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: black 1px solid;
+}
+
+.heropg p{
+position: absolute;
+right: 0;
+bottom:20px;
+width: 400px;
+height: 100px;
+border: black 0.5px dashed;
+opacity: 70%;
+background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
+font-size: 40px;
+text-align: right;
+padding-right: 20px;
+line-height: 100px;
+border-right: none;
+border-top-left-radius: 12px;
+border-top-right-radius: 0;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 0;
+
+}
+
+
+
+/*all of left column*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
