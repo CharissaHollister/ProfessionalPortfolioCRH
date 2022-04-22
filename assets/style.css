@@ -138,15 +138,34 @@ text-align: right;
 
 /*work*/
 
-    /*flex box for work section*/
+    /*flex box for work section 
+    left and right columns*/
+.worksec{
+    display: flex;
+    position: relative;
+    margin: auto;
+}
 .leftProj, .rightProj{
     text-align: center;
+    width:30%;
+    display: flex;
+    display: inline-block;
+    position: relative;
+}
+.leftProj{
+margin-left: 5%;
+}
+
+.rightProj{
+margin-left:65%;
 }
 
     /*center block*/
 .centerBlock img{
     width: 30%;
     text-align: center;
+    margin-left: 35%;
+    position: absolute;
 
 }
 
