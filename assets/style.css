@@ -117,7 +117,6 @@ border-bottom-right-radius: 0;
 }
 
 
-
 /*all of left column*/
 
 aside h3{
@@ -138,6 +137,20 @@ text-align: right;
 /*about me*/
 
 /*work*/
+
+    /*flex box for work section*/
+.leftProj, .rightProj{
+    text-align: center;
+}
+
+    /*center block*/
+.centerBlock img{
+    width: 30%;
+    text-align: center;
+
+}
+
+
 
 /*contact me*/
 

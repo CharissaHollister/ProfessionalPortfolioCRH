@@ -7,4 +7,4 @@ Wireframe drafted to include about me, work, and contact me. Work will include s
 
 Header and nav drafted to include large Name and 4 small nav links that change on hovering.
 
-
+Footer drafted to include telephone, email, github, and linked in.
