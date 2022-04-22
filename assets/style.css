@@ -141,32 +141,77 @@ text-align: right;
     /*flex box for work section 
     left and right columns*/
 .worksec{
-    display: flex;
     position: relative;
+    display: flex;
+    width: 100%;
     margin: auto;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: fit-content;
 }
+
 .leftProj, .rightProj{
     text-align: center;
-    width:30%;
-    display: flex;
-    display: inline-block;
-    position: relative;
+    width:340px;
+    min-height: 900px;
+    justify-content: space-around;
+    max-height: fit-content;
+    position: absolute;
+align-content: space-between;
+/*figure out how to space evenly vertical*/
 }
+.worksec div section{
+/*width and height of 300x150px is 
+denoted in image source html*/
+    text-align: center;
+}
+
 .leftProj{
+float: left;
 margin-left: 5%;
+padding: 5%;
 }
 
 .rightProj{
-margin-left:65%;
+float: right;
+margin-left: 70%;
+padding: 5%;
 }
+
+/*.leftProj img, .rightProj img{
+width:200px;
+height:100px; /*remove or change later*/
+/*position: absolute;
+}*/
+
+/*.left1{
+    margin-top: 600px;
+}
+.left2{
+    margin-top: 900px;
+}
+.left3{
+    margin-top: 1200px;
+}
+.right1{
+    margin-top: 600px;
+}
+.right2{
+    margin-top: 900px;
+}
+.right3{
+    margin-top: 1200px;
+}*/
+
+
+
 
     /*center block*/
 .centerBlock img{
     width: 30%;
     text-align: center;
     margin-left: 35%;
-    position: absolute;
-
+    position:absolute;
 }
 
 
