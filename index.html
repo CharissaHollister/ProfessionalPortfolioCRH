@@ -16,25 +16,20 @@
 <body>
 
 <!--headline with quicklinks-->
-    <header class="header">
-        <h2>Charissa Hollister</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+    <h2>Charissa Hollister</h2>
+    <nav>
+                <div>
+                <a href="#about-me">About Me</a></div>
+                <div>
+                <a href="#projects">Work</a></div>
+                <div>
+                <a href="#contact-me">Contact Me</a></div>
+                <div>
+                <a href="www.github.com">Resume</a></div>
+
+    </nav>
+</header>
 
 <!--Banner background image in CSS class heropg-->
     <div class="heropg" title="credit wallpaperaccess.com/digital-computer">
@@ -44,73 +39,76 @@
 
 
     <main> 
-        <article class="aboutMe">
+        <article id="about-me" class="aboutMe">
             <aside>
-                About Me <!--left column-->
+               <h3> About Me</h3> <!--left column-->
             </aside>
-            <p>
+            <div>
+                <p>
                 professional brand statement
             </p>
             <p>
                 history and credentials
             </p>
+            </div>
         </article>
 
-        <article class="workSec">
+        <article class="workSec" id="projects">
                 <!--left column--><!--might remove-->
             <!--<aside>
                 Work
             </aside>-->
-                <!--middle image replaced by webpage preview on hover-->
-            <div class="centerBlock">
-                <img img src="mindsettiger.jpg" alt="Mindset is Everything quote with baby kitten seeing himself as a strong tiger">
-                <!--no label-->
-            </div>
+
                 <!--3 projects on left side-->
             <div class="leftProj">
                 <section>
-                    <img class="left1" src="bill gates focus quote.png" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="bill gates focus quote.png" alt="/">
                     <h4>project 2</h4>
                 </section>
                 <section>
-                    <img class="left2" src="image1.jpg" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="image1.jpg" alt="/">
                     <h4>project 3</h4>
                 </section>
                 <section>
-                    <img class="left3" src="image2.jpg" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="image2.jpg" alt="/">
                     <h4>project 4</h4>
                 </section>
             </div>
+                            <!--middle image replaced by webpage preview on hover-->
+                            <div class="centerBlock">
+                                <img img src="mindsettiger.jpg" alt="Mindset is Everything quote with baby kitten seeing himself as a strong tiger">
+                                <!--no label-->
+                            </div>
                 <!--3 projects on right side-->
             <div class="rightProj">
                 <section>
-                    <img class="right1" src="image3.jpg" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="image3.jpg" alt="/">
                     <h4>project 5</h4>
                 </section>
                 <section>
-                    <img class="right2" src="image2.jpg" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="image2.jpg" alt="/">
                     <h4>project 6</h4>
                 </section>
                 <section>
-                    <img class="right3" src="image2.jpg" alt="/" width="300px" height="150px">
+                    <img class="ProjImg" src="image2.jpg" alt="/">
                     <h4>project 6</h4>
                 </section>
             </div>
                 <!--bottom other landscape section unless 
                 I update it to be the contact info instead-->
             <div class="OtherProj">
-                <img src="image2.jpg" alt="/" width="700px" height="150px">
+                <img src="image2.jpg" alt="/">
                 <h4>Other</h4>
             </div>
         </article>
 
-        <article class="contactMe">
+        <article class="contactMe" id="contact-me">
             <aside>
                 <h3>Contact Me</h3><!--left column-->
             </aside>
             <ul>
                 <li>
-                    <a href="/">Telephone</a>
+                    <a href="tel:651-308-1489">Telephone</a>
                 </li>
                 <li>
                     <a href = "mailto:Charissa.hollister@gmail.com">Email</a>

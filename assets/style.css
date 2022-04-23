@@ -2,7 +2,6 @@
 /*Authored by Charissa Hollister on 04/19/22*/
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -25,19 +24,6 @@
 
 /*general selectors*/
 
-.left-align{
-    text-align: left;
-}
-.right-align{
-    text-align: right;
-}
-.center-text{
-    text-align: center;
-}
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
 .float-right {
     float: right;
     margin-left: 25px;
@@ -48,34 +34,34 @@
 
 /*--headline with quicklinks*/
 .header {
-    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--secondary-color);
 }
 
 .header h2{
-    display: inline-block;
     font-size: 48px;
 }
 
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+nav {
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
-    list-style-type: none;
+    display: flex;
 }
 
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+nav div{
+    margin: 0 25px;
 }
 
 nav a {
     color: var(--primary-color);
-    text-decoration: none;
 }
 
 nav a:hover{
@@ -99,14 +85,15 @@ nav a:hover{
 position: absolute;
 right: 0;
 bottom:20px;
-width: 400px;
+width: 32vw;
+min-width: 250px;
 height: 100px;
 border: black 0.5px dashed;
 opacity: 70%;
 background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
 font-size: 40px;
 text-align: right;
-padding-right: 20px;
+
 line-height: 100px;
 border-right: none;
 border-top-left-radius: 12px;
@@ -119,104 +106,99 @@ border-bottom-right-radius: 0;
 
 /*about me and contact left column*/
 
-aside h3{
-    font-size: 33px;
-    float: left;
+.aboutMe, .contactMe{
+    display: flex;
+ justify-content: left;
+padding: 12px 0;
+}
+.aboutMe aside, .contactMe aside{
+    width:30vw;
+    min-width: 50px;
+    display: flex;
+justify-content: right;
+align-items: center;
+border-right: 1px solid var(--primary-color);
 }
 
-
-/*about me right column*/
-article p {
-    width: 75%;
-    display: inline-block;
-   padding-right: 20px;
-text-align: right;
+.aboutMe h3, .contactMe h3{
+    padding: 0 20px 0 10px;
 }
 
-
+.aboutMe p{
+    padding: 15px 20px;
+}
 /*about me*/
 
 /*work*/
 
     /*flex box for work section 
     left and right columns*/
-.worksec{
-    position: relative;
+.workSec{
     display: flex;
-    width: 100%;
+    width: 100vw;
     margin: auto;
     flex-wrap: wrap;
-    overflow: auto;
-    height: fit-content;
     row-gap: 20px;
     border: none;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .leftProj, .rightProj{
-    text-align: center;
-    width:340px;
-    min-height: 900px;
-    justify-content: space-around;
-    max-height: fit-content;
-    position: absolute;
+    width:25vw;
+    min-height: 500px;
     margin:auto;
+    justify-content: center;
+    text-align: center;
 /*figure out how to space evenly vertical*/
 }
-.worksec div section{
-/*width and height of 300x150px is 
-denoted in image source html*/
+    /*center block*/
+.centerBlock img{
+    width: 30vw;
     text-align: center;
+}
+
+.ProjImg{
+    height: 150px;
+    width: 22vw;
 }
 
 /*figure out how to move title to middle of project img*/
 
-.leftProj{
-float: left;
-margin-left: 5%;
-padding: 5%;
-}
-
-.rightProj{
-float: right;
-margin-left: 70%;
-padding: 5%;
-}
-    /*center block*/
-.centerBlock img{
-    width: 30%;
-    text-align: center;
-    margin-left: 35%;
-    position:absolute;
-}
 
 .OtherProj{
-    position: relative;
-    text-align: center;
+    width:100vw;
+    padding:5px 25vw;
+    justify-content: center;
+}
+.OtherProj img{
+    width: 50vw;
+    min-width: 200px;
+    height:auto;
+    min-height: 75px;
+    max-height: 150px;
 }
 /*contact me*/
-/*
-.contactMe{
+
+/*.contactMe{
  display:flex;
  margin: 20px 0px;
  padding: 20px;
  align-items: center;
  position: relative;
 }
-/*how to center vertically 
-and space contacts across the right column*/
-/*
+/*how to center vertically*/
+
 
 .contactMe ul{
     padding-top: 15px;
-    margin-right: 20px;
-    position: absolute;
+    display: flex;
     width: 75%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     list-style-type: none;
-    float: right;
     text-align: right;
-    overflow: auto;
     
 }
 .contactMe ul li{
