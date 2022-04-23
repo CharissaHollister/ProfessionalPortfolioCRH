@@ -17,13 +17,13 @@
     --blur: 10px;
 }
 
-
-
-
-
-
 /*general selectors*/
-
+.left-align{
+    justify-content: left;
+}
+.right-align{
+    justify-content: right;
+}
 .float-right {
     float: right;
     margin-left: 25px;
@@ -51,7 +51,7 @@
 nav {
     justify-content: space-around;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 30px;
     display: flex;
 }
@@ -93,7 +93,6 @@ opacity: 70%;
 background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
 font-size: 40px;
 text-align: right;
-
 line-height: 100px;
 border-right: none;
 border-top-left-radius: 12px;
@@ -121,13 +120,47 @@ border-right: 1px solid var(--primary-color);
 }
 
 .aboutMe h3, .contactMe h3{
+    font-size: 28px;
     padding: 0 20px 0 10px;
 }
 
+/*about me right column*/
+
 .aboutMe p{
     padding: 15px 20px;
+    font-size: 20PX;
 }
-/*about me*/
+
+/*contact me right column*/
+
+.contactMe ul{
+    padding-top: 15px;
+    display: flex;
+    width: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+    text-align: right;
+}
+
+.contactMe a{
+color: darkmagenta;
+}
+.contactMe a:hover{
+    color: black;
+}
+
+.contactMe section {
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    display: flex;
+}
+
+.contactMe div{
+    margin: 0 25px;
+}
 
 /*work*/
 
@@ -138,7 +171,6 @@ border-right: 1px solid var(--primary-color);
     width: 100vw;
     margin: auto;
     flex-wrap: wrap;
-    row-gap: 20px;
     border: none;
     margin-top: 20px;
     justify-content: space-between;
@@ -146,78 +178,80 @@ border-right: 1px solid var(--primary-color);
 }
 
 .leftProj, .rightProj{
-    width:25vw;
+    width:35vw;
     min-height: 500px;
-    margin:auto;
+
     justify-content: center;
-    text-align: center;
-/*figure out how to space evenly vertical*/
-}
-    /*center block*/
-.centerBlock img{
-    width: 30vw;
     text-align: center;
 }
 
 .ProjImg{
     height: 150px;
     width: 22vw;
+    margin: 10px 0;
+    display: flex;
 }
 
-/*figure out how to move title to middle of project img*/
+/*label for projects and other sections*/
+.projs{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: center;
+}
+/*add shadow*/
 
+/*project titles*/
+.leftH4{
+    color: aqua;
+    position: absolute;
+    left: 3vw;
+    padding: 10px 3vw;
+    border: solid 3px var(--primary-color);
+    width: auto;
+    opacity: 70%;
+    background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
+}
+
+.rightH4{
+    color: aqua;
+    position: absolute;
+    right: 3vw;
+    padding: 10px 3vw;
+    border: solid 3px var(--primary-color);
+    width: auto;
+    opacity: 70%;
+    background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
+}
+
+    /*center block*/
+.centerBlock img{
+    width: 30vw;
+    text-align: center;
+    margin:auto;
+    justify-content: center;
+}
 
 .OtherProj{
     width:100vw;
     padding:5px 25vw;
     justify-content: center;
+    display: flex;
+    margin-top:35px;
 }
+
 .OtherProj img{
     width: 50vw;
     min-width: 200px;
-    height:auto;
     min-height: 75px;
     max-height: 150px;
 }
-/*contact me*/
-
-/*.contactMe{
- display:flex;
- margin: 20px 0px;
- padding: 20px;
- align-items: center;
- position: relative;
+.OtherProj h4{
+justify-content: center;
+text-align: center;
 }
-/*how to center vertically*/
-
-
-.contactMe ul{
-    padding-top: 15px;
-    display: flex;
-    width: 75%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    list-style-type: none;
-    text-align: right;
-    
-}
-.contactMe ul li{
-    display: inline-block;
-
-}
-.contactMe a{
-color: darkmagenta;
-
-}
-.contactMe a:hover{
-    color: black;
-}
-
-
-
-
-
-
+/* for items inside of OtherProj on top of picture
+.OtherProj p{}*/
 
 /*footer*/
 footer {
