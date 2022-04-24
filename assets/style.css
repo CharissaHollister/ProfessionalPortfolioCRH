@@ -475,8 +475,8 @@ footer p {
     }
 
     .avatarWave{
-        height: 25px;
-        width:25px;
+        height: 40px;
+        width:40px;
     }
 
     nav{
@@ -507,7 +507,7 @@ footer p {
     }
 
     .leftProjImg, .rightProjImg{
-        width: 40vw;
+        width: 60vw;
         padding: 20px 0;
         height: auto;
         margin: auto;
@@ -532,8 +532,15 @@ footer p {
     display: block;
 }
 
+footer{
+    display: block;
+}
+span{
+font-size: 8px;
+}
 
 
+/*coming soon mobile*/
     .avatarWork{
         position: absolute;
         right: 25vw;
