@@ -470,13 +470,16 @@ footer p {
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 650px) {
 
+    header{
+        width: 100%;
+    }
     .aboutMe div{
         font-size: 12px;
     }
 
     .avatarWave{
-        height: 40px;
         width:40px;
+        height: auto;
     }
 
     nav{
@@ -484,7 +487,7 @@ footer p {
     }
 
     .subtitle{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .workSec{
@@ -503,14 +506,16 @@ footer p {
         display: block;
         width:100vw;  
         padding: 0 20vw; 
-        margin-left: 20vw;
+        margin: 0;
     }
 
     .leftProjImg, .rightProjImg{
+        text-align: center;
         width: 60vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
         padding: 20px 0;
         height: auto;
-        margin: auto;
     }
 
     .leftProjImg:hover, .rightProjImg:hover{
@@ -528,13 +533,15 @@ footer p {
         background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
     }
 
-.contactMe{
+.contactMe section{
     display: block;
 }
 
 footer{
-    display: block;
+    width: 100%;
+    display: inline-block;
 }
+
 span{
 font-size: 8px;
 }
