@@ -471,7 +471,19 @@ footer p {
 @media screen and (max-width: 650px) {
 
     .aboutMe div{
-        font-size: 20px;
+        font-size: 12px;
+    }
+
+    .avatarWave{
+        height: 25px;
+        width:25px;
+    }
+    nav{
+        display: block;
+    }
+
+    .subtitle{
+        font-size: 12px;
     }
 
     .workSec{
