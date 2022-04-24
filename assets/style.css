@@ -27,14 +27,10 @@
 }
 .float-right {
     float: right;
-
 }
 
-/*add screen size responsiveness*/
-
-
 /*--headline with quicklinks*/
-.header {
+header {
     display: flex;
     width: 100vw;
     justify-content: space-between;
@@ -43,9 +39,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--secondary-color);
+    z-index: 9999
 }
 
-.header h2{
+header h2{
     font-size: 48px;
     padding-left: 25px;
 }
@@ -87,11 +84,11 @@ nav a:hover{
 position: absolute;
 right: 0;
 bottom:20px;
-width: 38vw;
+width: 51vw;
 min-width: 250px;
 height: 100px;
 border: black 0.5px dashed;
-opacity: 70%;
+opacity: 87%;
 background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
 border-right: none;
 border-top-left-radius: 12px;
@@ -107,7 +104,7 @@ right: 0;
 padding-right: 2vw;
 bottom:20px;
 font-weight: bold;
-    width: 32vw;
+    width: 49vw;
     min-width: 250px;
     height: 100px;
     font-size: 40px;
@@ -168,7 +165,7 @@ border-right: 1px solid var(--primary-color);
     width: 10vw;
     min-width: 30px;
     padding: 12px 8px 12px 0;
-    }
+}
 
 .aboutMe h3, .contactMe h3{
     font-size: 28px;
@@ -186,26 +183,10 @@ border-right: 1px solid var(--primary-color);
     padding: 10px 20px;
     font-size: 20PX;
     color: navy;
+text-indent: 30px;
 }
 
 /*contact me right column*/
-
-.contactMe ul{
-    padding-top: 15px;
-    display: flex;
-    width: 70vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    list-style-type: none;
-    text-align: right;
-}
-
-.contactMe a{
-color: darkmagenta;
-}
-.contactMe a:hover{
-    color: black;
-}
 
 .contactMe section {
     justify-content: space-around;
@@ -214,6 +195,13 @@ color: darkmagenta;
     font-size: 30px;
     display: flex;
     margin: 20px 0;
+}
+
+.contactMe a{
+color: darkmagenta;
+}
+.contactMe a:hover{
+    color: black;
 }
 
 .contactMe div{
@@ -243,8 +231,8 @@ color: darkmagenta;
 }
 
 .leftProjImg, .rightProjImg{
-    height: 150px;
     width: 22vw;
+    height: auto;
     margin: 10px 0;
     display: flex;
     transition: 0.3s;
@@ -318,6 +306,7 @@ color: darkmagenta;
 
 .otherImg{
     width: 35vw;
+    height: auto;
     max-height: 200px;
     margin: 25px 0;
     display: flex;
@@ -348,9 +337,11 @@ text-align: center;
 footer {
     padding: 20px;
     padding-left: 40px;
+    width: 100vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--secondary-color);
+    display: inline-block;
 }
 
 footer h2{
@@ -363,11 +354,165 @@ footer span{
 }
 
 footer p {
-    padding-top: 10px;
-    margin-right: 20px;
-    padding-right: 70px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 30px;
     color: var(--primary-color);
 }
+
+
+
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+
+
+    header {
+        padding: 20px;
+        padding-left: 40px;
+        display: inline-block;
+    }
+    
+    header h2{
+        display: inline-block;
+        font-size: 45px;
+    }
+
+    nav{
+        padding: 10px;
+        width: 90vw;
+        margin: 0 7vw 0 3vw;
+        font-size: 30px;
+    }
+
+    nav div{
+    padding:0;
+    }
+    
+
+    .aboutMe, .contactMe{
+    display: block;
+    width:100vw;
+    justify-content: center;
+    }
+
+    .aboutMe aside, .contactMe aside{
+    width:60vw;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    margin: 5px 20vw;
+    padding: 10px 0;
+    }
+    
+    .aboutMe h3, .contactMe h3{
+        font-size: 40px;
+    }
+
+    .aboutMe div{
+        width:100vw;
+        word-wrap: normal;
+        align-items: center;
+    }
+
+    .contactMe section{
+        padding-top: 5px;
+        width: 100vw;
+        font-size: 30px;
+        align-items: space-evenly;
+    }
+        
+    .leftProj, .rightProj{
+        width:40vw;
+        margin: 5vw;
+    }
+    
+    .leftProjImg{
+        width: 38vw;
+        left:7vw;
+    }
+
+    .rightProjImg{
+        width: 40vw;
+        right:7vw;
+    }
+
+    .leftH4, .rightH4{
+        font-size: 30px;
+    }
+    .centerBlock img{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+    .otherImg{
+        width: 65vw;
+    }
+    
+    .midH4{
+        font-size: 40px ;
+        margin: 0 32vw;
+        width: 46vw;
+    }
+    
+    footer p {
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    
+
+    }
+    
+      /* MEDIA QUERY FOR TABLETS AND SMALLER */
+      /*No changes from 980 needed*/
+    
+    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+    @media screen and (max-width: 575px) {
+
+    .aboutMe div{
+        font-size: 20px;
+    }
+
+    .workSec{
+        display: block;
+        position: relative;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .leftProj, .rightProj{
+        justify-content: center;
+        width:60vw;   
+        margin:0 20vw;
+    }
+    
+    .leftProjImg, .rightProjImg{
+        width: 40vw;
+        padding: 20px 0;
+        height: auto;
+        margin: auto;
+    }
+    
+    .leftProjImg:hover, .rightProjImg:hover{
+        transform: scale(1.4); 
+    }
+
+    .leftH4, .rightH4{
+        justify-content: center;
+        font-size: 30px ;
+        left: 22vw;
+        width: 56vw;
+        opacity: 85%;
+        background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
+    }
+    
+    }
+
+    
+    
