@@ -2,6 +2,7 @@
 /*Authored by Charissa Hollister on 04/19/22*/
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -26,7 +27,7 @@
 }
 .float-right {
     float: right;
-    margin-left: 25px;
+
 }
 
 /*add screen size responsiveness*/
@@ -103,6 +104,27 @@ border-bottom-right-radius: 0;
 
 }
 
+/*Coming soon page*/
+.heropg aside{
+    position: absolute;
+    right: 0;
+    bottom:20px;
+    border: black 0.5px dashed;
+    opacity: 85%;
+    background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
+    font-size: 40px;
+    text-align: right;
+    line-height: 100px;
+    border-right: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 0;
+    width: 50vw;
+    min-width: 480px; 
+    height: 150px;
+    padding-right: 20px;
+}
 
 /*about me and contact left column*/
 
