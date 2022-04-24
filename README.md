@@ -19,5 +19,13 @@ Coming soon page drafted and linked for projects as placeholder for the empty pr
 
 Add avatar to About Me and Coming Soon page.
 
+Add name and job title to footer
 
+
+##Future Updates Needed:
+-Attach Resume once created
+-Attach Linked In account once created
+-Update professional brand statement once written
+-Projects to share as they become available
+-Add any smaller projects or ideas to other section as they become available
 

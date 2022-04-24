@@ -347,7 +347,11 @@ footer {
 
 footer h2{
     display: inline-block;
-    font-size: 48px;
+    font-size: 45px;
+}
+
+footer span{
+    font-size: 25px;
 }
 
 footer p {
