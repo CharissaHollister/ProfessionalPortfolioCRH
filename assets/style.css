@@ -496,13 +496,14 @@ footer p {
     .leftProj, .rightProj{
         justify-content: center;
         width:100vw;
-        margin-bottom: 0;
+
     }
 
     .projs{
         display: block;
         width:100vw;  
         padding: 0 20vw; 
+        margin-left: 20vw;
     }
 
     .leftProjImg, .rightProjImg{
@@ -527,12 +528,20 @@ footer p {
         background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
     }
 
+.contactMe{
+    display: block;
+}
+
+
+
     .avatarWork{
         position: absolute;
         right: 25vw;
         top: 25vh;
         margin: 20px;
         }
+
+
 
 }
     
