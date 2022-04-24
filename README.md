@@ -28,4 +28,5 @@ Add name and job title to footer
 -Update professional brand statement once written
 -Projects to share as they become available
 -Add any smaller projects or ideas to other section as they become available
+-Update History and Credentials paragraph with additional information
 
