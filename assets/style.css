@@ -106,6 +106,7 @@ display: flex;
 right: 0;
 padding-right: 2vw;
 bottom:20px;
+font-weight: bold;
     width: 32vw;
     min-width: 250px;
     height: 100px;
@@ -165,7 +166,7 @@ border-right: 1px solid var(--primary-color);
 .avatarWave{
     width: 10vw;
     min-width: 30px;
-    padding: 12px 6px 12px 0;
+    padding: 12px 8px 12px 0;
     }
 
 .aboutMe h3, .contactMe h3{
@@ -236,7 +237,6 @@ color: darkmagenta;
 .leftProj, .rightProj{
     width:35vw;
     min-height: 500px;
-
     justify-content: center;
     text-align: center;
 }
@@ -246,16 +246,17 @@ color: darkmagenta;
     width: 22vw;
     margin: 10px 0;
     display: flex;
+    /*add shadow*/
 }
 
-/*label for projects and other sections*/
+/*container for project sections*/
 .projs{
     display: flex;
     align-items: center;
     margin:auto;
     justify-content: center;
 }
-/*add shadow*/
+
 
 .projs:hover{
     border: #e56fea solid 5px;
@@ -288,6 +289,8 @@ color: darkmagenta;
     background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
 }
 
+
+
     /*center block*/
 .centerBlock img{
     width: 30vw;
@@ -296,6 +299,7 @@ color: darkmagenta;
     justify-content: center;
 }
 
+/*Other Section*/
 .OtherProj{
     display: flex;
     width:100vw;
@@ -304,31 +308,27 @@ color: darkmagenta;
     margin-top:35px;
 }
 
-.OtherProj img{
-    padding:35px 25vw 30px 25vw;
-    width: 50vw;
-    min-width: 200px;
-    min-height: 75px;
-    max-height: 150px;
-    margin: auto;
+.otherImg{
+    width: 35vw;
+    max-height: 200px;
+    margin: 25px 0;
+    display: flex;
+    /*add shadow*/
 }
 
-.OtherProj h4{
-font-size: 35px;
-/*justify-content: center;
+.midH4{
+    color: var(--bg-color2);
+    position: absolute;
+    font-size: 23px ;
+    padding: 10px 3vw;
+    border: solid 3px var(--primary-color);
+    opacity: 85%;
+    background: linear-gradient(to top,var(--secondary-color),var(--primary-color));
+justify-content: center;
 text-align: center;
-color: aqua;
-width: auto;*/
-color: aqua;
-position: absolute;
-padding: 10px;
-margin: 0 35vw;
-border: solid 3px var(--primary-color);
-width: 30vw;
+margin: 0 39vw;
+width: 21vw;
 text-align: center;
-opacity: 70%;
-background: linear-gradient(to top,var(--secondary-color),var(--primary-color));
-
 }
 
 /* for items inside of OtherProj on top of picture
