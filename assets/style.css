@@ -133,6 +133,7 @@ border-right: 1px solid var(--primary-color);
 .aboutMe p{
     padding: 15px 20px;
     font-size: 20PX;
+    color: navy;
 }
 
 /*contact me right column*/
