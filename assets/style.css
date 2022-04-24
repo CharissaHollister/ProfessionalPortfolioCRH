@@ -83,25 +83,35 @@ nav a:hover{
     border: black 1px solid;
 }
 
-.heropg p{
+.subtitleBox{
 position: absolute;
 right: 0;
 bottom:20px;
-width: 32vw;
+width: 38vw;
 min-width: 250px;
 height: 100px;
 border: black 0.5px dashed;
 opacity: 70%;
 background: linear-gradient(to right,var(--secondary-color),var(--primary-color));
-font-size: 40px;
-text-align: right;
-line-height: 100px;
 border-right: none;
 border-top-left-radius: 12px;
 border-top-right-radius: 0;
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 0;
+display: flex;
+}
 
+.subtitle{
+    position: absolute;
+right: 0;
+padding-right: 2vw;
+bottom:20px;
+    width: 32vw;
+    min-width: 250px;
+    height: 100px;
+    font-size: 40px;
+    text-align: right;
+    line-height: 100px;
 }
 
 /*Coming soon page*/
@@ -133,6 +143,7 @@ display: flex;
 justify-content: left;
 padding: 12px 0;
 }
+
 .aboutMe aside, .contactMe aside{
     width:30vw;
     min-width: 50px;
@@ -141,6 +152,12 @@ justify-content: right;
 align-items: center;
 border-right: 1px solid var(--primary-color);
 }
+
+.avatarWave{
+    width: 10vw;
+    min-width: 30px;
+    padding: 12px 6px 12px 0;
+    }
 
 .aboutMe h3, .contactMe h3{
     font-size: 28px;
@@ -151,7 +168,9 @@ border-right: 1px solid var(--primary-color);
 .aboutMe div{
     width:70vw;
     word-wrap: normal;
+    align-items: center;
 }
+
 .aboutMe p{
     padding: 10px 20px;
     font-size: 20PX;

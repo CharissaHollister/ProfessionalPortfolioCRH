@@ -14,3 +14,5 @@ worksection drafted to contain a column of 3 projects, a center image, and anoth
 work section center image is of an inspirational quote that turns to webpage preview upon hover on project
 
 Coming soon page drafted and linked for projects as placeholder for the empty projects.
+
+add avatar by subtitle
