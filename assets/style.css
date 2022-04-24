@@ -478,12 +478,13 @@ footer p {
         height: 25px;
         width:25px;
     }
+
     nav{
         display: block;
     }
 
     .subtitle{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .workSec{
@@ -495,6 +496,7 @@ footer p {
     .leftProj, .rightProj{
         justify-content: center;
         width:100vw;
+        margin-bottom: 0;
     }
 
     .projs{
@@ -518,12 +520,19 @@ footer p {
 
     .leftH4, .rightH4{
         justify-content: center;
-        font-size: 30px ;
+        font-size: 12px ;
         left: 22vw;
         width: 56vw;
         opacity: 85%;
         background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
     }
+
+    .avatarWork{
+        position: absolute;
+        right: 25vw;
+        top: 25vh;
+        margin: 20px;
+        }
 
 }
     
