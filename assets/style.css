@@ -365,7 +365,6 @@ footer p {
 
 
 
-
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
 
@@ -464,43 +463,45 @@ footer p {
         padding: 10px;
         padding-bottom: 20px;
     }
-    
+
 
     }
     
-      /* MEDIA QUERY FOR TABLETS AND SMALLER */
-      /*No changes from 980 needed*/
-    
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-    @media screen and (max-width: 575px) {
+@media screen and (max-width: 650px) {
 
     .aboutMe div{
         font-size: 20px;
     }
 
     .workSec{
-        display: block;
-        position: relative;
         width: 100vw;
         justify-content: center;
         align-items: center;
     }
-    
+   
     .leftProj, .rightProj{
         justify-content: center;
-        width:60vw;   
-        margin:0 20vw;
+        width:100vw;
     }
-    
+
+    .projs{
+        display: block;
+        width:100vw;  
+        padding: 0 20vw; 
+    }
+
     .leftProjImg, .rightProjImg{
         width: 40vw;
         padding: 20px 0;
         height: auto;
         margin: auto;
     }
-    
+
     .leftProjImg:hover, .rightProjImg:hover{
         transform: scale(1.4); 
+        justify-content: left;
+        margin-right:-20vw;
     }
 
     .leftH4, .rightH4{
@@ -511,8 +512,9 @@ footer p {
         opacity: 85%;
         background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
     }
+
+}
     
-    }
 
     
     
