@@ -29,4 +29,4 @@ Add name and job title to footer
 -Projects to share as they become available
 -Add any smaller projects or ideas to other section as they become available
 -Update History and Credentials paragraph with additional information
-
+-Add website preview in center when hovering over associated project

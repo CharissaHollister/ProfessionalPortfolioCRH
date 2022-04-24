@@ -152,6 +152,7 @@ font-weight: bold;
 display: flex;
 justify-content: left;
 padding: 12px 0;
+margin-bottom: 20px;
 }
 
 .aboutMe aside, .contactMe aside{
@@ -241,11 +242,12 @@ color: darkmagenta;
     text-align: center;
 }
 
-.ProjImg{
+.leftProjImg, .rightProjImg{
     height: 150px;
     width: 22vw;
     margin: 10px 0;
     display: flex;
+    transition: 0.3s;
     /*add shadow*/
 }
 
@@ -257,12 +259,18 @@ color: darkmagenta;
     justify-content: center;
 }
 
-
-.projs:hover{
+.leftProjImg:hover{
     border: #e56fea solid 5px;
-/*add how to display preview of webpage on hover*/
+    transform: scale(1.7); 
+    justify-content: left;
+    margin-right:-20vw;
 }
-
+.rightProjImg:hover{
+    border: #e56fea solid 5px;
+    transform: scale(1.7); 
+    justify-content: right;
+    margin-left:-20vw;
+}
 
 /*project titles*/
 .leftH4{
