@@ -9,10 +9,15 @@ Header and nav drafted to include large Name and 4 small nav links that change o
 
 Footer drafted to include telephone, email, github, and linked in.
 
-worksection drafted to contain a column of 3 projects, a center image, and another column of 3 projects on the right
+worksection drafted to contain a column of 3 projects, a center image, and another column of 3 projects on the right.
 
-work section center image is of an inspirational quote that turns to webpage preview upon hover on project
+Quote images in place of future projects.
+
+work section center image is of an inspirational quote that turns to webpage preview upon hover on project.
 
 Coming soon page drafted and linked for projects as placeholder for the empty projects.
 
-add avatar by subtitle
+Add avatar to About Me and Coming Soon page.
+
+
+
