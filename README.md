@@ -26,6 +26,12 @@ Mobile responsiveness add for 2 smaller screen options
 image alts updated for screen readers
 
 
+##Preview: "./Screenshot 2022-04-25 171857.jpg"
+
+##GitHub Repo: https://github.com/CharissaHollister/ProfessionalPortfolioCRH
+
+##Published URL: https://charissahollister.github.io/ProfessionalPortfolioCRH/
+
 ##Future Updates Needed:
 -Attach Resume once created
 -Attach Linked In account once created
