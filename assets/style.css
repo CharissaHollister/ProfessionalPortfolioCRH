@@ -239,6 +239,22 @@ color: darkmagenta;
     /*add shadow*/
 }
 
+/*attempt at click then move and expand, come back to later
+.project1embed iframe{
+    width: 22vw;
+    height: auto;
+}
+
+#btnControl {
+    display: none;
+}
+#btnControl:checked + label {
+    border: #e56fea solid 5px;
+    transform: scale(1.7); 
+    justify-content: left;
+    margin-right:-20vw;  
+}*/
+
 /*container for project sections*/
 .projs{
     display: flex;
@@ -478,7 +494,7 @@ footer p {
     }
 
     .avatarWave{
-        width:40px;
+        width:30vw;
         height: auto;
     }
 
@@ -487,7 +503,7 @@ footer p {
     }
 
     .subtitle{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .workSec{
@@ -499,6 +515,8 @@ footer p {
     .leftProj, .rightProj{
         justify-content: center;
         width:100vw;
+        margin-top: 0;
+        margin-bottom: 0;
 
     }
 
@@ -526,13 +544,17 @@ footer p {
 
     .leftH4, .rightH4{
         justify-content: center;
-        font-size: 12px ;
+        font-size: 18px ;
         left: 22vw;
         width: 56vw;
         opacity: 85%;
         background: linear-gradient(to left,var(--secondary-color),var(--primary-color));
     }
 
+    .contactMe aside{
+        width: 100vw;
+        font-size: 25px;
+    }
 .contactMe section{
     display: block;
 }
@@ -540,6 +562,7 @@ footer p {
 footer{
     width: 100%;
     display: inline-block;
+    font-size: 18px;
 }
 
 span{
@@ -551,7 +574,7 @@ font-size: 8px;
     .avatarWork{
         position: absolute;
         right: 25vw;
-        top: 25vh;
+        top: 30vh;
         margin: 20px;
         }
 
