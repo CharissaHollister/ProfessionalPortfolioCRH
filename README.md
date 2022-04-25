@@ -21,6 +21,10 @@ Add avatar to About Me and Coming Soon page.
 
 Add name and job title to footer
 
+Mobile responsiveness add for 2 smaller screen options
+
+image alts updated for screen readers
+
 
 ##Future Updates Needed:
 -Attach Resume once created
