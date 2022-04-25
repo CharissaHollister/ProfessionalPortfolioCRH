@@ -529,6 +529,8 @@ footer p {
 
     .leftProjImg, .rightProjImg{
         text-align: center;
+        justify-content: center;
+        align-items: center;
         width: 60vw;
         margin-left: 20vw;
         margin-right: 20vw;
